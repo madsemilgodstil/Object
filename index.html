@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <h1>Biler</h1>
     <section id="cars"></section>
 
     <template id="carTemplate">
@@ -23,7 +24,7 @@
             model: "5008",
             price: 40000,
         };
-        for (let i = 0; i > 4; i++) {
+        for (let i = 0; i < 4; i++) {
             const template = document.querySelector("#carTemplate").content;
 
             const copy = template.cloneNode(true);
@@ -37,7 +38,6 @@
         }
     </script>
 </body>
-
 
 
 </html>

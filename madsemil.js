@@ -1,9 +1,9 @@
 {
   abilities: [flyve, lasersyn, stærk]
   civilName: 'Clark Kent'
-  superName: 'Superman'
+  superName: 'Supermads'
   isEvil: 'false'
   hasCape: 'true'
-  age: 35
+  age: 31
   img: 'noget fra unspalsh'
 }
