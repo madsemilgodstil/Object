@@ -1,5 +1,5 @@
 {
-  abilities: [javaScript, superhørelse, stærk]
+  abilities: [javaScript, superHørelse, superStærk]
   civilName: 'Mads Emil'
   superName: 'Supermads'
   isEvil: 'false'
