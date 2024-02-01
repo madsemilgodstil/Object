@@ -8,13 +8,15 @@
 </head>
 
 <body>
-    <h1>Biler</h1>
+
     <section id="cars"></section>
 
     <template id="carTemplate">
         <article class="car">
             <h1>MAKE - MODEL</h1>
-            <p class="price">Price: <span></span>dkr</p>
+            <p class="price">Price: <span></span>dkkr</p>
+            <img src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1440"
+                alt="">
         </article>
     </template>
 
@@ -22,7 +24,8 @@
         const car = {
             make: "Peugeot",
             model: "5008",
-            price: 40000,
+            price: 50000,
+            img: "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1440",
         };
         for (let i = 0; i < 4; i++) {
             const template = document.querySelector("#carTemplate").content;
