@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="cars"></section>
+
+    <template id="carTemplate">
+        <article class="car">
+            <h1>MAKE - MODEL</h1>
+            <p class="price">Price: <span></span>dkr</p>
+        </article>
+    </template>
+
+    <script>
+        const car = {
+            make: "Peugeot",
+            model: "5008",
+            price: 40000,
+        };
+        for (let i = 0; i > 4; i++) {
+            const template = document.querySelector("#carTemplate").content;
+
+            const copy = template.cloneNode(true);
+
+            copy.querySelector("h1").textContent = `${car.make} - ${car.model}`;
+
+            copy.querySelector(".price span").textContent = car.price;
+
+            document.querySelector("#cars").appendChild(copy);
+
+        }
+    </script>
+</body>
+
+
+
+</html>
